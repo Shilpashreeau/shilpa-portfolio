@@ -1,24 +1,19 @@
 import { Link } from "react-router-dom";
 
-function NavBar(){
-return(
-
-
-
-<nav className="nav">
+function NavBar() {
+  return (
+    <nav className="nav">
       <Link to="/">
-        <div>Home</div>
+        <div className="nav-item">Home</div>
       </Link>
       <Link to="/projects">
-        <div>Projects</div>
+        <div className="nav-item">Projects</div>
       </Link>
       <Link to="/contact">
-        <div>Contact</div>
+        <div className="nav-item">Contact</div>
       </Link>
     </nav>
-    
-)
-
+  );
 }
 
 export default NavBar;
