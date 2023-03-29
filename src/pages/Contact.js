@@ -13,39 +13,19 @@ return ele.name
 console.log(result);
     return(
         <>
-        <div>
         
-        <p>Don't forget to check my resume! </p>
+        
+        <p>Don't forget to check my resume! </p><br/>
         
         <Button variant="dark"> <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1j6OBYQKlXFKX66BvLI46cRUAFXfVnCEpJRqhn1b098Q/edit?usp=sharing" >Resume</a></Button>
-
+        <br/>
         <h4>Apologies, I am not available on these days!</h4>
-        {result.map(ele=><p class="calendar">1 <em>{ele}</em></p>)}
-        
+        <br/>
+       <div> {result && result.map(ele=><p class="calendar">1 <em>{ele}</em></p>)}
+       </div>
        
-
-        <p> If you have any questions, please fill the form below. I will get back to you asap !</p>
+       
       
-        </div>
-        <div>
-        <Form>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label> Please provide your email.</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
-        
-      </Form.Group>
-
-      <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Kindly brief about how I can help you !</Form.Label>
-        <Form.Control type="password" placeholder="Message" />
-      </Form.Group>
-      
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
-    </Form>
-         
-            </div>
             </>    
     )
     }

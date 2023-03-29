@@ -40,7 +40,7 @@
 }
 .intro{
 
-position: absolute ;
+position:absolute;
 right:20%;
 bottom: 25%;
 }
@@ -188,5 +188,7 @@ bottom: 25%;
 	}
 .calendar em:before{left:13px;}	
 .calendar em:after{right:13px;}	
+
+
 
 
