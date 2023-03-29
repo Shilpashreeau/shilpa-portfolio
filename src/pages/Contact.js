@@ -10,21 +10,23 @@ const result=days && days.response.holidays.map(ele=>{
 return ele.name
 
 })
+console.log(result);
     return(
         <>
         <div>
-        <h1>I am not available on these days!</h1>
-<div>{result}</div>
-      <p>Let me help you with my resume </p>
+        
+        <p>Don't forget to check my resume! </p>
         
         <Button variant="dark"> <a target="_blank" rel="noreferrer" href="https://docs.google.com/document/d/1j6OBYQKlXFKX66BvLI46cRUAFXfVnCEpJRqhn1b098Q/edit?usp=sharing" >Resume</a></Button>
+
+        <h4>Apologies, I am not available on these days!</h4>
+        {result.map(ele=><p class="calendar">1 <em>{ele}</em></p>)}
+        
+       
 
         <p> If you have any questions, please fill the form below. I will get back to you asap !</p>
       
         </div>
-       
-
-
         <div>
         <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">

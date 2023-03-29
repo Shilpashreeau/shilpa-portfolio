@@ -2,7 +2,7 @@ import BG1 from "../images/BG1.png"
 function Home() {
   return (
     <div className="home">
-      <img className="home-image" src={BG1} width="100%" />
+      <img className="home-image" src={BG1} alt="office-image" width="100%" />
       <h3 className="intro">
         
         Hi, My name is Shilpa.
