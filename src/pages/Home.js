@@ -1,6 +1,6 @@
 function Home() {
   return (
-    <div>
+    <div className="home">
       <h3>
         Hi, My name is Shilpa.
         <br />A software Engineer

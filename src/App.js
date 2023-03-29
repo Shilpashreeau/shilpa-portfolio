@@ -7,8 +7,25 @@ import Contact from "./pages/Contact";
 import ProjectDisplay from "./pages/ProjectDisplay";
 import Projects from "./pages/Projects";
 import { data } from "./data/data";
+import { getday } from "./services/calenderapi";
+import { useState, useEffect } from "react";
 console.log(data);
 function App() {
+  const [holidays,setHolidays]=useState(null);
+  console.log(holidays);
+  useEffect(()=>{
+  const fetchData=async()=>{
+  const data=await getday();
+  console.log(data);
+  setHolidays(data);
+  
+  
+  };
+  fetchData();
+  
+  
+  },[]);
+
   return (
     <div className="App">
       <NavBar />
@@ -18,7 +35,7 @@ function App() {
         <Route path="/projects" element={<Projects projectData={data} />} />
 
         <Route path="/project/:id" element={<ProjectDisplay  />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact days={holidays}/>} />
       </Routes>
       <Footer />
     </div>

@@ -7,13 +7,13 @@ import Link from "@mui/material/Link";
 function Footer() {
   return (
     <div>
-      <Link href="https://github.com/Shilpashreeau" color="inherit">
+      <Link target="_blank" href="https://github.com/Shilpashreeau" color="inherit">
         <GitHub />
       </Link>
-      <Link href="https://www.linkedin.com/in/shilpashree1" color="inherit">
+      <Link target="_blank" href="https://www.linkedin.com/in/shilpashree1" color="inherit">
         <LinkedIn />
       </Link>
-      <Link href="/contact" color="inherit">
+      <Link target="_blank" href="/contact" color="inherit">
         <Email />
       </Link>
     </div>

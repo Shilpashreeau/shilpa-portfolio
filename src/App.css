@@ -7,14 +7,29 @@
   display: flex;
   /* text:rgb(69, 232, 28); */
   height: 80px;
-
+  width:1000px;
+ 
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   /* gap: 20px; */
   font-size: 20px;
-}
-.nav-item{
 
+}
+.nav a {
   color: rgb(52, 190, 24);
+  text-decoration: none;
+  /* margin: 20px; */
+  font-size: 20px;
+  
+  /* padding-left: 400px; */
+  
+}
+.home{
+
+  display:flex;
+  height:500px;
+  width:1300px;
+  background-image: url("./BG1.png");
+  background-repeat: no-repeat;
 }

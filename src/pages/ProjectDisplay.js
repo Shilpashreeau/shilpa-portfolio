@@ -11,7 +11,7 @@ function ProjectDisplay() {
       <h1>{project.name}</h1>
       <img src={project.image} alt="project name" ></img> 
       <p><b>Built with:</b> {project.skills}</p>
-      <a target="_blank" href={project.github}>Github</a> 
+      <a target="_blank" rel="noreferrer" href={project.github}>Github</a> 
     </div>
   );
 }
