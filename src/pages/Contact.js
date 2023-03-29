@@ -5,17 +5,12 @@ import Form from 'react-bootstrap/Form';
 
 function Contact(props){
 const {days}=props;
-console.log(days.response.holidays);
-const result=days.response.holidays.map(ele=>{
+// console.log(days.response.holidays);
+const result=days && days.response.holidays.map(ele=>{
 return ele.name
 
 })
-// const listOfHolidays=holidays.response.holidays[0].name;
-// const listOfHolidays = holidays.map((ele) => {
-//   return ele.response.map((e) => {
-//     return <div>{e.holidays}</div>;
-//   });
-// });
+
 
 
 
