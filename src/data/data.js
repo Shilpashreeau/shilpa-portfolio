@@ -10,7 +10,7 @@ export const data = [
       name: "Todo",
       image:
         "https://cdn.dribbble.com/users/3836353/screenshots/7045201/dribbble_2x_4x.png",
-      skills: "React, HTML,CSS",
+      skills: "React, HTML,CSS,ReactJS",
       github:"https://github.com/Shilpashreeau/todoapp",
     },
     // {

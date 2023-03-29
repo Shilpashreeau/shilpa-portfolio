@@ -10,12 +10,6 @@ const result=days && days.response.holidays.map(ele=>{
 return ele.name
 
 })
-
-
-
-
-
-
     return(
         <>
         <div>

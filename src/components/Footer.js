@@ -6,7 +6,7 @@ import Link from "@mui/material/Link";
 
 function Footer() {
   return (
-    <div>
+    <div className="footer">
       <Link target="_blank" href="https://github.com/Shilpashreeau" color="inherit">
         <GitHub />
       </Link>

@@ -8,10 +8,10 @@ function ProjectDisplay() {
   const project = data[id];
   return (
     <div className="project">
-      <h1>{project.name}</h1>
+      {/* <h1>{project.name}</h1> */}
       <img src={project.image} alt="project name" ></img> 
-      <p><b>Built with:</b> {project.skills}</p>
-      <a target="_blank" rel="noreferrer" href={project.github}>Github</a> 
+      <p><b>Built with:</b> {project.skills}</p><br/>
+      <a target="_blank" rel="noreferrer" href={project.github}>Github</a> <br/>
     </div>
   );
 }
