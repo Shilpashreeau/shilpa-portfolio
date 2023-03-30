@@ -4,21 +4,29 @@
   box-sizing: border-box;
   
     outline: 1px dashed orange;
+    font-family:cursive;
+    font-style: italic;
     
 }
-.nav {
+.App{
+  background-image: url("./images/sky1.jpg");
+}
+nav {
   display: flex;
   /* text:rgb(69, 232, 28); */
   height: 60px;
   /* width:1000px; */
- 
+background-color: #0d1b2a;
   flex-direction: row;
   align-items:center;
   justify-content:space-around;
   /* gap: 20px; */
   font-size: 20px;
-
+ 
+  /* font-style:oblique; */
+  
 }
+
 .nav a {
   color: rgb(52, 190, 24);
   text-decoration: none;
@@ -27,6 +35,9 @@
   
   /* padding-left: 400px; */
   
+}
+.nav a:hover {
+  background-color: #B9E9FC;
 }
 .home{
 
@@ -49,6 +60,7 @@ bottom: 25%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background-color: #0d1b2a;
   /* flex-direction: column; */
 
 }
