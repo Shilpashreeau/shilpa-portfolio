@@ -8,8 +8,8 @@
     font-style: italic;
     
 }
-.App{
-  background-image: url("./images/sky1.jpg");
+body{
+  background-image: url("./images/whitesky.jpg");
 }
 nav {
   display: flex;
@@ -39,6 +39,10 @@ background-color: #0d1b2a;
 .nav a:hover {
   background-color: #B9E9FC;
 }
+a{
+  text-decoration: none;
+}
+
 .home{
 
   display:flex;
