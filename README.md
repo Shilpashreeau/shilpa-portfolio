@@ -1,5 +1,5 @@
 ## Live site
-[site](shilpauday-portfolio.netlify.app)
+
 
 # Getting Started with Create React App
 
