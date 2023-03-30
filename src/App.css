@@ -1,72 +1,56 @@
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
-    outline: 1px dashed orange;
-    font-family:cursive;
-    font-style: italic;
-    
+
+  /* outline: 1px dashed orange; */
+  font-family: cursive;
+  font-style: italic;
 }
-body{
+body {
   background-image: url("./images/whitesky.jpg");
 }
 nav {
   display: flex;
-  /* text:rgb(69, 232, 28); */
   height: 60px;
-  /* width:1000px; */
-background-color: #0d1b2a;
+  background-color: #0d1b2a;
   flex-direction: row;
-  align-items:center;
-  justify-content:space-around;
-  /* gap: 20px; */
+  align-items: center;
+  justify-content: space-around;
   font-size: 20px;
- 
-  /* font-style:oblique; */
-  
 }
 
 .nav a {
-  color: rgb(52, 190, 24);
+  color: #C9F4AA;
   text-decoration: none;
-  /* margin: 20px; */
   font-size: 20px;
-  
-  /* padding-left: 400px; */
-  
 }
 .nav a:hover {
-  background-color: #B9E9FC;
+  background-color: #155771;
 }
-a{
+a {
   text-decoration: none;
 }
 
-.home{
-
-  display:flex;
-  /* height:400px; */
+.home {
+  display: flex;
   background-size: cover;
-  width:100%;
+  width: 100%;
 
   background-repeat: no-repeat;
   justify-self: center;
+  position: relative;
 }
-.intro{
-
-position:absolute;
-right:20%;
-bottom: 25%;
+.intro {
+  position: absolute;
+  right: 20%;
+  bottom: 50%;
 }
-.footer{
-
+.footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background-color: #0d1b2a;
-  /* flex-direction: column; */
-
 }
 .projects {
   width: 100%;
@@ -119,8 +103,6 @@ bottom: 25%;
 }
 .project {
   width: 100%;
-  /* height: calc(100vh - 100px); */
-  /* height:5%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,70 +123,125 @@ bottom: 25%;
   font-size: 20px;
   color: #3e497a;
 }
-.calendar{
-	margin:.25em 10px 10px 0;
-	padding-top:5px;
-	float:left;
-	width:80px;
-	background:#ededef;
-	background: -webkit-gradient(linear, left top, left bottom, from(#ededef), to(#ccc)); 
-	background: -moz-linear-gradient(top,  #ededef,  #ccc); 
-	font:bold 30px/60px Arial Black, Arial, Helvetica, sans-serif;
-	text-align:center;
-	color:#000;
-	text-shadow:#fff 0 1px 0;	
-	border-radius:3px;	
-	position:relative;
-	box-shadow:0 2px 2px #888;
-	}
+
+.calendar {
+  margin: 0.25em 10px 10px 0;
+  padding-top: 5px;
+  float: left;
+  width: 80px;
+  background: #ededef;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ededef),
+    to(#ccc)
+  );
+  background: -moz-linear-gradient(top, #ededef, #ccc);
+  font: bold 10px/50px Arial Black, Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #000;
+  text-shadow: #fff 0 1px 0;
+  border-radius: 3px;
+  position: relative;
+  box-shadow: 0 2px 2px #888;
+}
 
 /* Em element is also styled, it contains the month’s name. */
-.calendar em{
-	display:block;
-	font:normal bold 11px/30px Arial, Helvetica, sans-serif;
-	color:#fff;
-	text-shadow:#00365a 0 -1px 0;	
-	background:#04599a;
-	background:-webkit-gradient(linear, left top, left bottom, from(#04599a), to(#00365a)); 
-	background:-moz-linear-gradient(top,  #04599a,  #00365a); 
-	border-bottom-right-radius:3px;
-	border-bottom-left-radius:3px;	
-	border-top:1px solid #00365a;
-	}
+.calendar em {
+  display: block;
+  font: normal bold 11px/30px Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-shadow: #00365a 0 -1px 0;
+  background: #04599a;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#04599a),
+    to(#00365a)
+  );
+  background: -moz-linear-gradient(top, #04599a, #00365a);
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top: 1px solid #00365a;
+}
 
-/* Now I am styling the pseudo elements. Container’s pseudo elements (:before and :after) are used to create thos circles, "holes in te paper". */
-.calendar:before, .calendar:after{
-	content:'';
-	float:left;
-	position:absolute;
-	top:5px;	
-	width:8px;
-	height:8px;
-	background:#111;
-	z-index:1;
-	border-radius:10px;
-	box-shadow:0 1px 1px #fff;
-	}
-.calendar:before{left:11px;}	
-.calendar:after{right:11px;}
+/* Now I am styling the pseudo elements. Container’s pseudo elements (:before and :after) are used to create those circles, "holes in the paper". */
+.calendar:before,
+.calendar:after {
+  content: "";
+  float: left;
+  position: absolute;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  background: #111;
+  z-index: 1;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px #fff;
+}
+.calendar:before {
+  left: 11px;
+}
+.calendar:after {
+  right: 11px;
+}
 
 /*…and em’s pseudo elements are used to create the rings: */
-.calendar em:before, .calendar em:after{
-	content:'';
-	float:left;
-	position:absolute;
-	top:-5px;	
-	width:4px;
-	height:14px;
-	background:#dadada;
-	background:-webkit-gradient(linear, left top, left bottom, from(#f1f1f1), to(#aaa)); 
-	background:-moz-linear-gradient(top,  #f1f1f1,  #aaa); 
-	z-index:2;
-	border-radius:2px;
-	}
-.calendar em:before{left:13px;}	
-.calendar em:after{right:13px;}	
+.calendar em:before,
+.calendar em:after {
+  content: "";
+  float: left;
+  position: absolute;
+  top: -5px;
+  width: 4px;
+  height: 14px;
+  background: #dadada;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f1f1f1),
+    to(#aaa)
+  );
+  background: -moz-linear-gradient(top, #f1f1f1, #aaa);
+  z-index: 2;
+  border-radius: 2px;
+}
+.calendar em:before {
+  left: 13px;
+}
+.calendar em:after {
+  right: 13px;
+}
+.form{
+
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+ 
+}
 
 
 
 
+
+/* .form-control {
+  width: 65%;
+  max-width: 40%;
+  min-height: 2.5rem;
+
+}  */
+.resume{
+
+  display: flex;
+  
+ flex-direction: column;
+ align-items: center;
+}
+#cal-f{
+
+  height:300px;
+}
