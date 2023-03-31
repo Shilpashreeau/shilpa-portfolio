@@ -4,10 +4,13 @@
   box-sizing: border-box;
 
   /* outline: 1px dashed orange; */
-  font-family: cursive;
-  font-style: italic;
+  /* font-family: cursive;
+  font-style: italic; */
 }
 body {
+  font-family: 'Tangerine', serif;
+  font-size: 40px;
+  text-shadow: 4px 4px 4px #aaa;
   background-image: url("./images/whitesky.jpg");
 }
 nav {
@@ -17,13 +20,13 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  font-size: 20px;
+  font-size: 40px;
 }
 
 .nav a {
   color: #C9F4AA;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 40px;
 }
 .nav a:hover {
   background-color: #155771;
@@ -221,6 +224,7 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  
  
 }
 
@@ -228,12 +232,7 @@ a {
 
 
 
-/* .form-control {
-  width: 65%;
-  max-width: 40%;
-  min-height: 2.5rem;
 
-}  */
 .resume{
 
   display: flex;

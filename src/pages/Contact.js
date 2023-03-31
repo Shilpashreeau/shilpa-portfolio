@@ -27,7 +27,7 @@ function Contact(props) {
     <>
     <div className="resume">
       <p>Don't forget to check my resume! </p>
-      <br />
+      
 
       <a
         target="_blank"
@@ -95,7 +95,7 @@ const StyledContactForm = styled.div`
     align-items: center;
     flex-direction: column;
     width: 100%;
-    font-size: 16px;
+    font-size: 30px;
     input {
       width: 100%;
       height: 35px;
