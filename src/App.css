@@ -10,6 +10,7 @@ body {
   font-size: 40px;
   text-shadow: 4px 4px 4px #aaa;
   background-image: url("./images/whitesky.jpg");
+  background:linear-gradient(rgb(116, 116, 214),rgb(94, 159, 94));
 }
 nav {
   display: flex;
@@ -235,5 +236,8 @@ a {
 }
 #cal-f {
   height: 300px;
+}
+#query{
+  font-size: 2.0rem;
 }
 

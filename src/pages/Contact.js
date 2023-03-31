@@ -25,7 +25,7 @@ function Contact(props) {
         >
           Resume
         </a>
-        <h3>For queries please fill the form below</h3>
+        <h3 id="query">For queries please fill the form below</h3>
         <div className="form">
           <StyledContactForm>
             <form>
