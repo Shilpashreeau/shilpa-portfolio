@@ -58,7 +58,7 @@ function Contact(props) {
   );
 }
 export default Contact;
-// Styles for contct form
+// Styles for contact form
 const StyledContactForm = styled.div`
   width: 400px;
   form {
