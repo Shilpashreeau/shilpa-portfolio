@@ -16,7 +16,17 @@
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
 ![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)
+
+![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
 #
+
+#
+## **Wire frame**
+#
+
+
+![Wireframe](./src/images/wireframe.png "components of the app")
+
 
 
 # Getting Started with Create React App
@@ -89,3 +99,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+#
+## **Future updates**
+#
+
+- Add media queries to build more responsiveness.
+- Add more styling to the pages. 
+
+#
+#
+## **Author / Contact**
+#
+### Shilpa Uday
+[GitHub](https://github.com/Shilpashreeau)
+
+[LinkedIn](https://www.linkedin.com/in/shilpashree1)
+#
+## **Acknowledgements**
+#
+- https://www.youtube.com/watch?v=rXEKSO1p5t8 
+- https://codepen.io
+- https://www.w3schools.com
+- https://stackoverflow.com
+
