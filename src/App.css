@@ -1,14 +1,12 @@
- * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
   /* outline: 1px dashed orange; */
-  /* font-family: cursive;
-  font-style: italic; */
 }
 body {
-  font-family: 'Tangerine', serif;
+  font-family: "Tangerine", serif;
   font-size: 40px;
   text-shadow: 4px 4px 4px #aaa;
   background-image: url("./images/whitesky.jpg");
@@ -24,7 +22,7 @@ nav {
 }
 
 .nav a {
-  color: #C9F4AA;
+  color: #c9f4aa;
   text-decoration: none;
   font-size: 40px;
 }
@@ -48,6 +46,7 @@ a {
   position: absolute;
   right: 20%;
   bottom: 50%;
+  color: rgb(13, 3, 54);
 }
 .footer {
   display: flex;
@@ -84,6 +83,9 @@ a {
   margin: 40px;
   box-shadow: 0px 3px 15px rgba(47, 232, 87, 0.2);
   text-align: center;
+}
+#res:hover {
+  background-color: rgb(114, 114, 230);
 }
 .projectItem:hover {
   box-shadow: 0px 3px 15px rgba(23, 234, 69, 0.5);
@@ -218,29 +220,20 @@ a {
 .calendar em:after {
   right: 13px;
 }
-.form{
-
-  display:flex;
+.form {
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  
- 
 }
 
-
-
-
-
-
-.resume{
-
+.resume {
   display: flex;
-  
- flex-direction: column;
- align-items: center;
-}
-#cal-f{
 
-  height:300px;
+  flex-direction: column;
+  align-items: center;
 }
+#cal-f {
+  height: 300px;
+}
+

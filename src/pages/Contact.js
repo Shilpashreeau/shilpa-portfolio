@@ -1,93 +1,64 @@
 import React from "react";
-// import Button from "react-bootstrap/Button";
-// import Form from "react-bootstrap/Form";
 import styled from "styled-components";
 console.log(process.env.REACT_APP_APIKEY);
 function Contact(props) {
   const { days } = props;
   // console.log(days.response.holidays);
-  // const date=days &&
-  // days.response.holidays.map((ele) => {
-  //   return ele.date.iso
-  // });
-  const result=days && days.response.holidays.map((ele) => {
-    return {name:ele.name,date:ele.date.iso}
-  });
+  const result =
+    days &&
+    days.response.holidays.map((ele) => {
+      return { name: ele.name, date: ele.date.iso };
+    });
   console.log(result);
-  // const result =
-  //   days &&
-  //   days.response.holidays.map((ele) => {
-  //     return ele.name
-      // return ele.date.map(
-      //   day=>(<h1>{day.iso}</h1>)
-      // );
-    
+
   console.log(result);
   return (
     <>
-    <div className="resume">
-      <p>Don't forget to check my resume! </p>
-      
+      <div className="resume">
+        <p>Don't forget to check my resume! </p>
 
-      <a
-        target="_blank"
-        rel="noreferrer"
-        href="https://docs.google.com/document/d/1j6OBYQKlXFKX66BvLI46cRUAFXfVnCEpJRqhn1b098Q/edit?usp=sharing"
-      >
-        Resume
-      </a>
-      <h3>For queries please fill the form below</h3>
-      <div className="form">
-      <StyledContactForm>
-      <form >
-        <label>Name</label>
-        <input type="text" name="user_name" />
-        <label>Email</label>
-        <input type="email" name="user_email" />
-        <label>Message</label>
-        <textarea name="message" />
-        <input type="submit" value="Send" />
-      </form>
-    </StyledContactForm>
-         
-      </div>
-      <br /><br/>
-      <h4>Apologies, I am not available on these days!</h4>
+        <a
+          id="res"
+          target="_blank"
+          rel="noreferrer"
+          href="https://docs.google.com/document/d/1j6OBYQKlXFKX66BvLI46cRUAFXfVnCEpJRqhn1b098Q/edit?usp=sharing"
+        >
+          Resume
+        </a>
+        <h3>For queries please fill the form below</h3>
+        <div className="form">
+          <StyledContactForm>
+            <form>
+              <label>Name</label>
+              <input type="text" name="user_name" />
+              <label>Email</label>
+              <input type="email" name="user_email" />
+              <label>Message</label>
+              <textarea name="message" />
+              <input type="submit" value="Send" />
+            </form>
+          </StyledContactForm>
+        </div>
+        <br />
+        <br />
+        <h4>Apologies, I am not available on these days!</h4>
       </div>
       <br />
       <div className="cl">
         {" "}
         {result &&
-          result.map((ele,id) => (
+          result.map((ele, id) => (
             <p className="calendar" key={id}>
-            {ele.date}  <em>{ele.name}</em>
+              {ele.date} <em>{ele.name}</em>
             </p>
           ))}
-          </div>
-      <div id="cal-f">
-        
-
       </div>
-      
-
-
-
-          {/* {date &&
-          date.map((ele) => (
-            <p className="calendar">
-              {ele}<em></em>
-            </p>
-          ))} */}
-          
-          
-      
-      
-      
+      <div id="cal-f"></div>
     </>
   );
 }
 export default Contact;
-// Styles
+// Styles for contct form
 const StyledContactForm = styled.div`
   width: 400px;
   form {

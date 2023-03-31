@@ -11,31 +11,27 @@ import { getday } from "./services/calenderapi";
 import { useState, useEffect } from "react";
 console.log(data);
 function App() {
-  const [holidays,setHolidays]=useState(null);
+  const [holidays, setHolidays] = useState(null);
   console.log(holidays);
-  useEffect(()=>{
-  const fetchData=async()=>{
-  const data=await getday();
-  console.log(data);
-  setHolidays(data);
-  
-  
-  };
-  fetchData();
-  
-  
-  },[]);
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await getday();
+      console.log(data);
+      setHolidays(data);
+    };
+    fetchData();
+  }, []);
 
   return (
-    <div >
+    <div>
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
 
         <Route path="/projects" element={<Projects projectData={data} />} />
 
-        <Route path="/project/:id" element={<ProjectDisplay  />} />
-        <Route path="/contact" element={<Contact days={holidays}/>} />
+        <Route path="/project/:id" element={<ProjectDisplay />} />
+        <Route path="/contact" element={<Contact days={holidays} />} />
       </Routes>
       <Footer />
     </div>
