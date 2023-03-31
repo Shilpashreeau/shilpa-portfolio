@@ -16,6 +16,7 @@ function Footer() {
       <Link target="_blank" href="/contact">
         <Email />
       </Link>
+      <p id="copyright"><span id="at">&copy;</span>shilpashreehebbar@gmail.com </p>
     </div>
   );
 }
