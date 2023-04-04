@@ -1,7 +1,7 @@
 ## **My Personal Portfolio**
 #
 
-### Live Site => [Portfolio]( https://shilpashreeau.github.io/Game-project/)
+### Visit my portfolio => [Portfolio](shilpauday-portfolio.netlify.app)
 
 #
 ## **Built With**
