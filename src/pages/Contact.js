@@ -1,17 +1,18 @@
 import React from "react";
-import styled from "styled-components";
-console.log(process.env.REACT_APP_APIKEY);
-function Contact(props) {
-  const { days } = props;
+// import styled from "styled-components";
+// console.log(process.env.REACT_APP_APIKEY);
+// function Contact(props) {
+  function Contact() {
+  // const { days } = props;
   // console.log(days.response.holidays);
-  const result =
-    days &&
-    days.response.holidays.map((ele) => {
-      return { name: ele.name, date: ele.date.iso };
-    });
-  console.log(result);
+  // const result =
+  //   days &&
+  //   days.response.holidays.map((ele) => {
+  //     return { name: ele.name, date: ele.date.iso };
+  //   });
+  // console.log(result);
 
-  console.log(result);
+  // console.log(result);
   return (
     <>
       <div className="resume">
@@ -25,7 +26,7 @@ function Contact(props) {
         >
           Resume
         </a>
-        <h3 id="query">For queries please fill the form below</h3>
+        {/* <h3 id="query">For queries please fill the form below</h3>
         <div className="form">
           <StyledContactForm>
             <form>
@@ -51,14 +52,14 @@ function Contact(props) {
             <p className="calendar" key={id}>
               {ele.date} <em>{ele.name}</em>
             </p>
-          ))}
+          ))}*/}
       </div>
       <div id="cal-f"></div>
     </>
   );
-}
+} 
 export default Contact;
-// Styles for contact form
+{/* // Styles for contact form
 const StyledContactForm = styled.div`
   width: 400px;
   form {
@@ -102,5 +103,5 @@ const StyledContactForm = styled.div`
       color: white;
       border: none;
     }
-  }
-`;
+  } 
+`;*/}
