@@ -1,5 +1,5 @@
 import SC from "../images/SC.png";
-import TypeWriterEffect from "react-typewriter-effect";
+// import TypeWriterEffect from "react-typewriter-effect";
 function Home() {
   return (
     <div className="home">
@@ -7,7 +7,7 @@ function Home() {
       <h3 className="intro">
         {/* Hi, My name is Shilpa. */}
         <span>
-          <TypeWriterEffect 
+        {/* <TypeWriterEffect 
             textStyle={{
               //   fontFamily: 'Red Hat Display',
               color: "rgb(13, 3, 54)",
@@ -24,7 +24,7 @@ function Home() {
             multiTextDelay={1000}
             typeSpeed={80}
             multiTextLoop
-          />
+          /> */}
         </span>
       </h3>
     </div>
