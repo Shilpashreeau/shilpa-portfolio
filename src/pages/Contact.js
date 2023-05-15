@@ -59,7 +59,7 @@ import React from "react";
   );
 } 
 export default Contact;
-{/* // Styles for contact form
+/* // Styles for contact form
 const StyledContactForm = styled.div`
   width: 400px;
   form {
@@ -104,4 +104,4 @@ const StyledContactForm = styled.div`
       border: none;
     }
   } 
-`;*/}
+`;*/
