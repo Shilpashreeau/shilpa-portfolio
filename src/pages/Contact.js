@@ -22,7 +22,7 @@ import React from "react";
           id="res"
           target="_blank"
           rel="noreferrer"
-          href="https://docs.google.com/document/d/1j6OBYQKlXFKX66BvLI46cRUAFXfVnCEpJRqhn1b098Q/edit?usp=sharing"
+          // href="https://docs.google.com/document/d/1j6OBYQKlXFKX66BvLI46cRUAFXfVnCEpJRqhn1b098Q/edit?usp=sharing"
         >
           Resume
         </a>
